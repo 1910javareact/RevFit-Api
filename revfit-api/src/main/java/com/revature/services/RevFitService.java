@@ -1,13 +1,9 @@
 package com.revature.services;
 
 import java.util.List;
-
-import com.revature.models.Bear;
+import com.revature.models.User;
 
 public interface RevFitService {
 
-	Bear findBearById(int id);
-
-	List<Bear> getAllBears();
-
+	List<User> getAllUsers();
 }

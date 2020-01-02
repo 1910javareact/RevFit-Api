@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.revature.models.Bear;
+import com.revature.models.User;
 import com.revature.services.RevFitService;
 
 @RestController
-@RequestMapping("bears")
+@RequestMapping("user")
 public class RevFitController {
 	
 	private RevFitService rfs;
@@ -23,12 +23,7 @@ public class RevFitController {
 	}
 	
 	@GetMapping
-	public List<Bear> getAllBears(){
-		return rfs.getAllBears();
-	}
-	
-	@GetMapping("{id}")
-	public Bear findBearById(@PathVariable int id) {
-		return rfs.findBearById(id);
+	public List<User> getAllUsers(){
+		return rfs.getAllUsers();
 	}
 }
