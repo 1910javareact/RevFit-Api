@@ -37,4 +37,9 @@ public class RevFitController {
 		req.getSession().setAttribute("user", u);
 		return u;
 	}
+	
+	@PostMapping
+	public User saveOneUser( @RequestBody User u) {
+		return rfs.saveOneUser(u);
+	}
 }

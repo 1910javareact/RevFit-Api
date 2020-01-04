@@ -30,4 +30,9 @@ public class RevsFitServiceImpl implements RevFitService{
 		return rfd.findByUsernameAndPassword(username, password);
 	}
 
+	@Override
+	public User saveOneUser(User u) {
+		// TODO Auto-generated method stub
+		return rfd.save(u);	}
+
 }

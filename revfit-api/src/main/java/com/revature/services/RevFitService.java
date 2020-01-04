@@ -8,4 +8,6 @@ public interface RevFitService {
 	List<User> getAllUsers();
 
 	User findByUsernameAndPassword(String username, String password);
+
+	User saveOneUser(User u);
 }
