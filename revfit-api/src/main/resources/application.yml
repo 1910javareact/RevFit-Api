@@ -1,9 +1,9 @@
 server:
-  port: 1910
+  port: 5555
 
 spring:
   application:
-    name: bears-api
+    name: revfit-api
   datasource:
     driver-class-name: org.postgresql.Driver
     initialization-mode: never
