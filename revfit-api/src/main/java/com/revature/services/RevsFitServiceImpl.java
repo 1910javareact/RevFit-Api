@@ -1,7 +1,5 @@
 package com.revature.services;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +25,6 @@ public class RevsFitServiceImpl implements RevFitService{
 	@Override
 	public User saveOneUser(User u) {
 		// TODO Auto-generated method stub
-		return rfd.save(u);	}
-
+		return rfd.save(u);	
+	}
 }

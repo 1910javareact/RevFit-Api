@@ -5,7 +5,10 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,6 +35,11 @@ public class RevFitController {
 	
 	@PostMapping
 	public User saveOneUser( @RequestBody User u) {
+		return rfs.saveOneUser(u);
+	}
+	
+	@PatchMapping
+	public User save(@RequestBody User u) {
 		return rfs.saveOneUser(u);
 	}
 }
