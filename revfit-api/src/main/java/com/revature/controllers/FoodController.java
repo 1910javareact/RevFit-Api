@@ -11,7 +11,7 @@ import com.revature.models.Food;
 import com.revature.services.FoodService;
 
 @RestController
-@RequestMapping("Food")
+@RequestMapping("food")
 public class FoodController {
 
 	private FoodService fs;
